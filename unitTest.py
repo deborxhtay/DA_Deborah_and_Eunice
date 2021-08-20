@@ -6,6 +6,6 @@ class EuropeTest(unittest.TestCase):
     def test_something(self):
         visitors = EuropeStatistics()
         result = EuropeStatistics.TotalVisitorUnitedKingdom(visitors)
-        self.assertEqual(result, 116984)
+        self.assertEqual(result, 1467120)
 
 
