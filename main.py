@@ -89,12 +89,15 @@ class EuropeStatistics:
         ]
         # print(self.whatineed)
 
-        plt.scatter(self.whatineed['United Kingdom'], self.whatineed['year'])
+        plt.scatter(self.whatineed['United Kingdom'], self.whatineed['year'], color=(0.5,0.1,0.5,0.6))
+        plt.title("Number of Visitors in United Kingdom from 1979 - 1982", fontweight="bold", y=1.03)
+        plt.xlabel("Number of Visitors", fontweight="bold")
+        plt.ylabel("Year", fontweight="bold")
         plt.show();
 
 
     def chart2(self):
-        self.ax = self.whatineed['Germany'].plot(kind='bar', title="Vistors", figsize=(10, 10), legend=True, fontsize=12)
+        self.ax = self.whatineed['Germany'].plot(kind='bar', title="Number of Visitors in Germany from 1979 - 1982", figsize=(10, 10), legend=True, fontsize=12, color=(0.5,0.1,0.5,0.6))
         plt.show()
 
 
